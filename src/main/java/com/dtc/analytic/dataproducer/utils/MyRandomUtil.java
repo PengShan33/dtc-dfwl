@@ -60,14 +60,14 @@ public class MyRandomUtil {
     }
 
     public static String getRandVehicleDeviceId() {
-        String[] deviceTypes = {"test_k1","test_k2","test_k3","test_k4","test_k5","test_k6","test_k7","test_k8","test_k9","test_k10"};
+        /*String[] deviceTypes = {"test_k1","test_k2","test_k3","test_k4","test_k5","test_k6","test_k7","test_k8","test_k9","test_k10"};
         Random random = new Random();
         int i = random.nextInt(deviceTypes.length);
-        return deviceTypes[i];
+        return deviceTypes[i];*/
 
-        /*Random random = new Random();
+        Random random = new Random();
         int i = random.nextInt(2000) + 1;
         String deviceId = "k" + i;
-        return deviceId;*/
+        return deviceId;
     }
 }
