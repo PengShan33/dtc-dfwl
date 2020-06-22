@@ -1,0 +1,289 @@
+syntax = "proto3";//这个版本的protoc的protobuf编译器已经可以支持proto2语法和proto3的语法
+package com.dtc.analytic.online.protobuf;
+option java_outer_classname = "MotorVehicleObjProto";  //输出的类名
+
+import "SubImageInfoObj.proto";
+import "RelatedInfoObj.proto";
+
+// 机动车对象
+message MotorVehicle{
+
+    //记录编号
+    string recordId = 1;
+
+    //业务ID
+    string businessId = 2;
+
+    //信息分类
+    int32 infoKind = 3;
+
+    //来源标识
+    string sourceId = 4;
+
+    //近景照片
+    string storageUrl1 = 5;
+
+    //左上角X坐标(车体的轮廓外接矩形在画面中的位置)
+    int32 leftTopX = 6;
+
+    //左上角Y坐标(车体的轮廓外接矩形在画面中的位置)
+    int32 leftTopY = 7;
+
+    //右下角X坐标(车体的轮廓外接矩形在画面中的位置)
+    int32 rightBtmX = 8;
+
+    //右下角Y坐标(车体的轮廓外接矩形在画面中的位置)
+    int32 rightBtmY = 9;
+
+    //车牌左上角X坐标
+    int32 plateLeftTopX = 10;
+
+    //车牌左上角y坐标
+    int32 plateLeftTopY = 11;
+
+    //车牌右下角X坐标
+    int32 plateRightBtmX = 12;
+
+    //车牌右下角y坐标
+    int32 plateRightBtmY = 13;
+
+    //设备编号
+    string deviceId = 14;
+
+    //号牌号码
+    string plateNo = 15;
+
+    //号牌置信度
+    double plateNoConfidence = 16;
+
+    //号牌种类
+    string plateClass = 17;
+
+    //号牌颜色
+    string plateColor = 18;
+
+    //行驶状态
+    string trafficStatus = 19;
+
+    //车辆类型
+    string vehicleType = 20;
+
+    //车身颜色
+    string vehicleColor = 21;
+
+    //车辆品牌
+    string vehicleBrand = 22;
+
+    //车辆品牌置信度
+    double vehicleBrandConfidence = 23;
+
+    //车辆子品牌
+    string vehicleSubBrand = 24;
+
+    //车辆子品牌置信度
+    double vehicleSubBrandConfidence = 25;
+
+    //人脸数
+    int32 faceNum = 26;
+
+    //遮阳板
+    int32 sunVisor = 27;
+
+    //是否系安全带
+    int32 seatBeltStatus = 28;
+
+    //车辆年检标数
+    int32 annualInspectionNum = 29;
+
+    //挂件个数
+    int32 pendantsNum = 30;
+
+    //摆件个数
+    int32 ornamentsNum = 31;
+
+    //车辆年款
+    string vehicleYear = 32;
+
+    //纸巾盒数
+    int32 tissueBoxNum = 33;
+
+    //是否打电话
+    int32 callStatus = 34;
+
+    //违章类型
+    string violationType = 35;
+
+    //数据来源
+    string dataSource = 36;
+
+    //经过时间
+    int64 elapsedTime = 37;
+
+    //数据入kafka时间
+    int64 dataInKafkaTime = 38;
+
+    //入库时间
+    int64 entryTime = 39;
+
+    //车辆速度
+    double vehicleSpeed = 40;
+
+    //标志物
+    int32 markerType = 41;
+
+    //车头车尾
+    int32 vehicleHeadend = 42;
+
+    //是否遮挡面部
+    int32 shieldFace = 43;
+
+    //任务类型
+    string taskType = 44;
+
+    //数据来源厂商
+    string infoSource = 45;
+
+    //算法版本
+    string algorithmVersion = 46;
+
+    //算法厂商
+    int32 algorithmVendor = 47;
+
+    //特征向量
+    string eigenvector = 48;
+
+    //是否二次结构化
+    int32 isSecondaryStructure = 49;
+
+    //结构化时间
+    int64 structureTime = 50;
+
+    //全目标关联关系ID
+    string collectionId = 51;
+
+    //渗透字段信息
+    string additionalInfo = 52;
+
+    //数据来源
+    int32 source = 53;
+
+    //车道编号
+    string drivewayNo = 54;
+
+    //车辆位置
+    string vehicleLocation = 55;
+
+    //车牌位置
+    string plateLocation = 56;
+
+    //主驾遮阳板位置
+    string mainVisorPosition = 57;
+
+    //副驾遮阳板位置
+    string viceVisorPosition = 58;
+
+    //主驾安全带位置
+    string mainSeatBeltPosition = 59;
+
+    //副驾安全带位置
+    string viceSeatBeltPosition = 60;
+
+    //驾驶员开车打电话
+    string drivingCall = 61;
+
+    //年检标位置
+    string annualInspectionPosition = 62;
+
+    //挂件位置
+    string pendantLocation = 63;
+
+    //纸巾盒位置
+    string tissueBoxLocation = 64;
+
+    //车牌图片
+    string platePicUrl = 65;
+
+    //移动方向
+    int32 moveDirection = 66;
+
+    //特殊车辆
+    int32 specialCar = 67;
+
+    //移动速度
+    int32 moveSpeed = 68;
+
+    //图像列表
+    repeated SubImageInfo subImageList = 69;
+
+    //二次识别次数
+    int32 structureNum = 70;
+
+    //接入时间
+    int64 accessTime = 71;
+
+    //有无车牌
+    string hasPlate = 72;
+
+    //二次结构化来源
+    int32 structureSource = 73;
+
+    //卡口ID
+    string tollgateId = 74;
+
+    //车道号
+    int32 laneNO = 75;
+
+    //整体置信度
+    double WholeConfidence = 76;
+
+    //主驾开车打电话置信度
+    double DriverPhoneConfidence = 77;
+
+    //副驾开车打电话置信度
+    double DeputyDriverPhoneConfidence = 78;
+
+    //副驾安全带置信度
+    double DriverSeatBeltConfidence = 79;
+
+    //主驾安全带置信度
+    double DeputyDriverSeatBeltConfidence = 80;
+
+    //车顶物件
+    int32 roofItems = 81;
+
+    //车牌遮挡
+    int32 plateOcclusion = 82;
+
+    //面部遮挡
+    int32 facialOcclusion = 83;
+
+    //扩展字段
+    string Ext = 84;
+
+    //关联对象类型
+    string relatedType = 85;
+
+    //关联对象信息
+    repeated RelatedInfo relatedList = 86;
+
+    //设备经度【固定点位设备可选填，移动设备必填】
+    double Longitude = 87;
+
+    //设备纬度【固定点位设备可选填，移动设备必填】
+    double Latitude = 88;
+
+    //标记
+    int32 dataMarks = 89;
+
+    //非机动车轨迹
+    string traceInfo = 90;
+
+    //扩展字段
+    map<string,string> extMaps = 91;
+
+}
+
+// 机动车对象列表
+message MotorVehicleList{
+    repeated MotorVehicle vehiclelist = 1;
+}

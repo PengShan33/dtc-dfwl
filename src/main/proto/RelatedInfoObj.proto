@@ -1,0 +1,16 @@
+syntax = "proto3";//这个版本的protoc的protobuf编译器已经可以支持proto2语法和proto3的语法
+package com.dtc.analytic.online.protobuf;
+option java_outer_classname = "RelatedInfoObjProto";  //输出的类名
+
+message RelatedInfo{
+
+    //关联类型
+    string relatedType = 1;
+
+    //数据关联id
+    string relatedId = 2;
+
+    //网力企标关联关系ID
+    string relatedNPId = 3;
+
+}

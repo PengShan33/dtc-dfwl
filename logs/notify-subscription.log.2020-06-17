@@ -1,0 +1,335 @@
+2020-06-17 15:41:22,087 - Running job on local embedded Flink mini cluster
+2020-06-17 15:41:22,099 - Starting Flink Mini Cluster
+2020-06-17 15:41:22,355 - Starting Metrics Registry
+2020-06-17 15:41:22,429 - No metrics reporter configured, no metrics will be exposed/reported.
+2020-06-17 15:41:22,536 - Starting RPC Service(s)
+2020-06-17 15:41:22,934 - Slf4jLogger started
+2020-06-17 15:41:22,953 - Trying to start actor system at :0
+2020-06-17 15:41:23,006 - Slf4jLogger started
+2020-06-17 15:41:23,096 - Starting remoting
+2020-06-17 15:41:23,591 - Remoting started; listening on addresses :[akka.tcp://flink-metrics@192.168.200.1:55087]
+2020-06-17 15:41:23,597 - Actor system started at akka.tcp://flink-metrics@192.168.200.1:55087
+2020-06-17 15:41:23,600 - Starting high-availability services
+2020-06-17 15:41:23,614 - Created BLOB server storage directory C:\Users\ADMINI~1\AppData\Local\Temp\blobStore-b12bd2eb-7e15-4f2e-a315-476accead54e
+2020-06-17 15:41:23,619 - Started BLOB server at 0.0.0.0:55088 - max concurrent requests: 50 - max backlog: 1000
+2020-06-17 15:41:23,621 - Starting ResourceManger
+2020-06-17 15:41:23,639 - Starting RPC endpoint for org.apache.flink.runtime.resourcemanager.StandaloneResourceManager at akka://flink/user/resourcemanager_3c29a671-6bc9-4bdb-a450-52b8b8d56f58 .
+2020-06-17 15:41:23,657 - Proposing leadership to contender org.apache.flink.runtime.resourcemanager.StandaloneResourceManager@3e7634b9 @ akka://flink/user/resourcemanager_3c29a671-6bc9-4bdb-a450-52b8b8d56f58
+2020-06-17 15:41:23,659 - ResourceManager akka://flink/user/resourcemanager_3c29a671-6bc9-4bdb-a450-52b8b8d56f58 was granted leadership with fencing token 9593ae8b8cb4b48cdf5d38e373d147ec
+2020-06-17 15:41:23,660 - Starting the SlotManager.
+2020-06-17 15:41:23,661 - Created BLOB cache storage directory C:\Users\ADMINI~1\AppData\Local\Temp\blobStore-c8b72fb3-56fe-4b9c-bee4-38112fad5d82
+2020-06-17 15:41:23,661 - Received confirmation of leadership for leader akka://flink/user/resourcemanager_3c29a671-6bc9-4bdb-a450-52b8b8d56f58 , session=df5d38e3-73d1-47ec-9593-ae8b8cb4b48c
+2020-06-17 15:41:23,664 - Created BLOB cache storage directory C:\Users\ADMINI~1\AppData\Local\Temp\blobStore-013cf94f-6075-4b1b-a1be-f0d1bebff0a4
+2020-06-17 15:41:23,664 - Starting 1 TaskManger(s)
+2020-06-17 15:41:23,669 - Starting TaskManager with ResourceID: d8356d68-ed29-4c43-b9f3-96e18f256b17
+2020-06-17 15:41:23,732 - Temporary file directory 'C:\Users\ADMINI~1\AppData\Local\Temp': total 117 GB, usable 68 GB (58.12% usable)
+2020-06-17 15:41:23,820 - Allocated 199 MB for network buffer pool (number of memory segments: 6391, bytes per segment: 32768).
+2020-06-17 15:41:23,830 - Could not load Queryable State Client Proxy. Probable reason: flink-queryable-state-runtime is not in the classpath. To enable Queryable State, please move the flink-queryable-state-runtime jar from the opt to the lib folder.
+2020-06-17 15:41:23,830 - Could not load Queryable State Server. Probable reason: flink-queryable-state-runtime is not in the classpath. To enable Queryable State, please move the flink-queryable-state-runtime jar from the opt to the lib folder.
+2020-06-17 15:41:23,832 - Starting the network environment and its components.
+2020-06-17 15:41:23,835 - No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2020-06-17 15:41:23,836 - Limiting managed memory to 0.7 of the currently free heap space (1253 MB), memory will be allocated lazily.
+2020-06-17 15:41:23,842 - I/O manager uses directory C:\Users\ADMINI~1\AppData\Local\Temp\flink-io-78772860-c6de-4633-9a8b-f8399f9cec68 for spill files.
+2020-06-17 15:41:23,858 - Messages have a max timeout of 10000 ms
+2020-06-17 15:41:23,865 - Starting RPC endpoint for org.apache.flink.runtime.taskexecutor.TaskExecutor at akka://flink/user/taskmanager_0 .
+2020-06-17 15:41:23,877 - Start job leader service.
+2020-06-17 15:41:23,878 - Connecting to ResourceManager akka://flink/user/resourcemanager_3c29a671-6bc9-4bdb-a450-52b8b8d56f58(9593ae8b8cb4b48cdf5d38e373d147ec).
+2020-06-17 15:41:23,879 - User file cache uses directory C:\Users\ADMINI~1\AppData\Local\Temp\flink-dist-cache-15e1da5b-fb32-420d-88ee-6c064340ef5a
+2020-06-17 15:41:23,879 - Starting dispatcher rest endpoint.
+2020-06-17 15:41:23,898 - Resolved ResourceManager address, beginning registration
+2020-06-17 15:41:23,898 - Registration at ResourceManager attempt 1 (timeout=100ms)
+2020-06-17 15:41:23,907 - Registering TaskManager with ResourceID d8356d68-ed29-4c43-b9f3-96e18f256b17 (akka://flink/user/taskmanager_0) at ResourceManager
+2020-06-17 15:41:23,909 - Successful registration at resource manager akka://flink/user/resourcemanager_3c29a671-6bc9-4bdb-a450-52b8b8d56f58 under registration id 3573d5dda5fed41c50305314a6490025.
+2020-06-17 15:41:23,940 - Starting rest endpoint.
+2020-06-17 15:41:24,251 - Log file environment variable 'log.file' is not set.
+2020-06-17 15:41:24,251 - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'Key: 'web.log.path' , default: null (deprecated keys: [jobmanager.web.log.path])'.
+2020-06-17 15:41:24,267 - Failed to load web based job submission extension. Probable reason: flink-runtime-web is not in the classpath.
+2020-06-17 15:41:24,912 - Rest endpoint listening at localhost:55123
+2020-06-17 15:41:24,912 - Proposing leadership to contender org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint@3c2772d1 @ http://localhost:55123
+2020-06-17 15:41:24,912 - Starting job dispatcher(s) for JobManger
+2020-06-17 15:41:24,912 - http://localhost:55123 was granted leadership with leaderSessionID=cf3a1c4c-aec0-4f47-98e5-f6a82f30172a
+2020-06-17 15:41:24,912 - Received confirmation of leadership for leader http://localhost:55123 , session=cf3a1c4c-aec0-4f47-98e5-f6a82f30172a
+2020-06-17 15:41:24,919 - Starting RPC endpoint for org.apache.flink.runtime.dispatcher.StandaloneDispatcher at akka://flink/user/dispatcher014260c1-29e0-4f69-b426-ad758e3427da .
+2020-06-17 15:41:24,930 - Proposing leadership to contender org.apache.flink.runtime.dispatcher.StandaloneDispatcher@5b5caf08 @ akka://flink/user/dispatcher014260c1-29e0-4f69-b426-ad758e3427da
+2020-06-17 15:41:24,931 - Flink Mini Cluster started successfully
+2020-06-17 15:41:24,931 - Dispatcher akka://flink/user/dispatcher014260c1-29e0-4f69-b426-ad758e3427da was granted leadership with fencing token 8f0b0b2b-1e8d-4518-920e-eaee847f5a91
+2020-06-17 15:41:24,933 - Recovering all persisted jobs.
+2020-06-17 15:41:24,937 - Received confirmation of leadership for leader akka://flink/user/dispatcher014260c1-29e0-4f69-b426-ad758e3427da , session=8f0b0b2b-1e8d-4518-920e-eaee847f5a91
+2020-06-17 15:41:24,945 - Submitting job 71e6a57b60b71fb3bebae53ad37a650b (online-test).
+2020-06-17 15:41:24,964 - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/jobmanager_1 .
+2020-06-17 15:41:24,974 - Initializing job online-test (71e6a57b60b71fb3bebae53ad37a650b).
+2020-06-17 15:41:24,980 - Using restart strategy FixedDelayRestartStrategy(maxNumberRestartAttempts=3, delayBetweenRestartAttempts=10000) for online-test (71e6a57b60b71fb3bebae53ad37a650b).
+2020-06-17 15:41:24,984 - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.slotpool.SlotPool at akka://flink/user/3b16a1e1-1624-4f21-acd4-d71d5913ec1e .
+2020-06-17 15:41:25,004 - Job recovers via failover strategy: full graph restart
+2020-06-17 15:41:25,028 - Running initialization on master for job online-test (71e6a57b60b71fb3bebae53ad37a650b).
+2020-06-17 15:41:25,028 - Successfully ran initialization on master in 0 ms.
+2020-06-17 15:41:25,049 - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-06-17 15:41:25,059 - Proposing leadership to contender org.apache.flink.runtime.jobmaster.JobManagerRunner@337a728a @ akka://flink/user/jobmanager_1
+2020-06-17 15:41:25,060 - JobManager runner for job online-test (71e6a57b60b71fb3bebae53ad37a650b) was granted leadership with session id d41a9cd2-3e5c-4ef2-b137-1df7e3b8d68e at akka://flink/user/jobmanager_1.
+2020-06-17 15:41:25,061 - Starting execution of job online-test (71e6a57b60b71fb3bebae53ad37a650b)
+2020-06-17 15:41:25,063 - Job online-test (71e6a57b60b71fb3bebae53ad37a650b) switched from state CREATED to RUNNING.
+2020-06-17 15:41:25,066 - Source: Custom Source (1/1) (5faf53b533bc9ab5bd725a2d048b5585) switched from CREATED to SCHEDULED.
+2020-06-17 15:41:25,069 - Sink: Print to Std. Out (1/10) (882dbe86643b75e54dc984ca482e31ef) switched from CREATED to SCHEDULED.
+2020-06-17 15:41:25,070 - Sink: Print to Std. Out (2/10) (a4d4a88724f1fb5500264d61863a1cd7) switched from CREATED to SCHEDULED.
+2020-06-17 15:41:25,070 - Sink: Print to Std. Out (3/10) (347c84bb7600e28a1e4f8df759690581) switched from CREATED to SCHEDULED.
+2020-06-17 15:41:25,070 - Sink: Print to Std. Out (4/10) (0056536d38935a97dc7abc09a1237d6d) switched from CREATED to SCHEDULED.
+2020-06-17 15:41:25,070 - Sink: Print to Std. Out (5/10) (5f5bca2c0543abd2355c7a3c92981334) switched from CREATED to SCHEDULED.
+2020-06-17 15:41:25,070 - Sink: Print to Std. Out (6/10) (0c4b781637bbc0caf17e2038ae6d0697) switched from CREATED to SCHEDULED.
+2020-06-17 15:41:25,070 - Sink: Print to Std. Out (7/10) (c48c6a593d20ca7838895cd142d0a9d4) switched from CREATED to SCHEDULED.
+2020-06-17 15:41:25,070 - Sink: Print to Std. Out (8/10) (f20914f6201873b3e2a95666e91e043c) switched from CREATED to SCHEDULED.
+2020-06-17 15:41:25,070 - Sink: Print to Std. Out (9/10) (4cc983c7872957e9f832ed8db3908a01) switched from CREATED to SCHEDULED.
+2020-06-17 15:41:25,070 - Sink: Print to Std. Out (10/10) (171117c5781fb10c4cbc05f10bdafd54) switched from CREATED to SCHEDULED.
+2020-06-17 15:41:25,071 - Received confirmation of leadership for leader akka://flink/user/jobmanager_1 , session=d41a9cd2-3e5c-4ef2-b137-1df7e3b8d68e
+2020-06-17 15:41:25,072 - Connecting to ResourceManager akka://flink/user/resourcemanager_3c29a671-6bc9-4bdb-a450-52b8b8d56f58(9593ae8b8cb4b48cdf5d38e373d147ec)
+2020-06-17 15:41:25,073 - Resolved ResourceManager address, beginning registration
+2020-06-17 15:41:25,073 - Registration at ResourceManager attempt 1 (timeout=100ms)
+2020-06-17 15:41:25,075 - Registering job manager b1371df7e3b8d68ed41a9cd23e5c4ef2@akka://flink/user/jobmanager_1 for job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,076 - Cannot serve slot request, no ResourceManager connected. Adding as pending request [SlotRequestId{b73256a39772fcaeff144e049fd7f4e1}]
+2020-06-17 15:41:25,079 - Registered job manager b1371df7e3b8d68ed41a9cd23e5c4ef2@akka://flink/user/jobmanager_1 for job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,080 - JobManager successfully registered at ResourceManager, leader id: 9593ae8b8cb4b48cdf5d38e373d147ec.
+2020-06-17 15:41:25,081 - Requesting new slot [SlotRequestId{b73256a39772fcaeff144e049fd7f4e1}] and profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} from resource manager.
+2020-06-17 15:41:25,082 - Request slot with profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} for job 71e6a57b60b71fb3bebae53ad37a650b with allocation id AllocationID{d453564b40d47c4f2bf1c8f149971904}.
+2020-06-17 15:41:25,083 - Receive slot request AllocationID{d453564b40d47c4f2bf1c8f149971904} for job 71e6a57b60b71fb3bebae53ad37a650b from resource manager with leader id 9593ae8b8cb4b48cdf5d38e373d147ec.
+2020-06-17 15:41:25,083 - Allocated slot for AllocationID{d453564b40d47c4f2bf1c8f149971904}.
+2020-06-17 15:41:25,084 - Add job 71e6a57b60b71fb3bebae53ad37a650b for job leader monitoring.
+2020-06-17 15:41:25,085 - Try to register at job manager akka://flink/user/jobmanager_1 with leader id d41a9cd2-3e5c-4ef2-b137-1df7e3b8d68e.
+2020-06-17 15:41:25,085 - Resolved JobManager address, beginning registration
+2020-06-17 15:41:25,086 - Registration at JobManager attempt 1 (timeout=100ms)
+2020-06-17 15:41:25,087 - Successful registration at job manager akka://flink/user/jobmanager_1 for job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,088 - Establish JobManager connection for job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,090 - Offer reserved slots to the leader of job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,095 - Activate slot AllocationID{d453564b40d47c4f2bf1c8f149971904}.
+2020-06-17 15:41:25,097 - Requesting new slot [SlotRequestId{ee43fa108abee807ed6026d8384cc552}] and profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} from resource manager.
+2020-06-17 15:41:25,097 - Request slot with profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} for job 71e6a57b60b71fb3bebae53ad37a650b with allocation id AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}.
+2020-06-17 15:41:25,097 - Requesting new slot [SlotRequestId{0db3b6d93fc7f0ea05f43f8de77992aa}] and profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} from resource manager.
+2020-06-17 15:41:25,097 - Receive slot request AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5} for job 71e6a57b60b71fb3bebae53ad37a650b from resource manager with leader id 9593ae8b8cb4b48cdf5d38e373d147ec.
+2020-06-17 15:41:25,097 - Request slot with profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} for job 71e6a57b60b71fb3bebae53ad37a650b with allocation id AllocationID{9f08c738f370727054b0fae35a52129d}.
+2020-06-17 15:41:25,097 - Allocated slot for AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}.
+2020-06-17 15:41:25,097 - Requesting new slot [SlotRequestId{3b8263642d0bc94ad07934a171465a06}] and profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} from resource manager.
+2020-06-17 15:41:25,097 - Offer reserved slots to the leader of job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,098 - Request slot with profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} for job 71e6a57b60b71fb3bebae53ad37a650b with allocation id AllocationID{335928a960296c706d65176cefefaf5f}.
+2020-06-17 15:41:25,098 - Requesting new slot [SlotRequestId{790555ded38441772c558ae44aeb1c6e}] and profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} from resource manager.
+2020-06-17 15:41:25,098 - Receive slot request AllocationID{9f08c738f370727054b0fae35a52129d} for job 71e6a57b60b71fb3bebae53ad37a650b from resource manager with leader id 9593ae8b8cb4b48cdf5d38e373d147ec.
+2020-06-17 15:41:25,098 - Allocated slot for AllocationID{9f08c738f370727054b0fae35a52129d}.
+2020-06-17 15:41:25,098 - Request slot with profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} for job 71e6a57b60b71fb3bebae53ad37a650b with allocation id AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}.
+2020-06-17 15:41:25,098 - Requesting new slot [SlotRequestId{6a988c41288d1d35a2d0946e9f075f55}] and profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} from resource manager.
+2020-06-17 15:41:25,098 - Offer reserved slots to the leader of job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,098 - Request slot with profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} for job 71e6a57b60b71fb3bebae53ad37a650b with allocation id AllocationID{aaf83b91862cd4956ba8156e0655e6b5}.
+2020-06-17 15:41:25,098 - Receive slot request AllocationID{335928a960296c706d65176cefefaf5f} for job 71e6a57b60b71fb3bebae53ad37a650b from resource manager with leader id 9593ae8b8cb4b48cdf5d38e373d147ec.
+2020-06-17 15:41:25,098 - Requesting new slot [SlotRequestId{b3e2169856289e1e2d6001cd69a68451}] and profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} from resource manager.
+2020-06-17 15:41:25,098 - Allocated slot for AllocationID{335928a960296c706d65176cefefaf5f}.
+2020-06-17 15:41:25,099 - Offer reserved slots to the leader of job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,099 - Request slot with profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} for job 71e6a57b60b71fb3bebae53ad37a650b with allocation id AllocationID{fc9ccc4d0ae46038c4a118bbae8b8308}.
+2020-06-17 15:41:25,099 - Requesting new slot [SlotRequestId{47b72f989ca8bf3a92146b69ad7d541c}] and profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} from resource manager.
+2020-06-17 15:41:25,099 - Receive slot request AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4} for job 71e6a57b60b71fb3bebae53ad37a650b from resource manager with leader id 9593ae8b8cb4b48cdf5d38e373d147ec.
+2020-06-17 15:41:25,099 - Request slot with profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} for job 71e6a57b60b71fb3bebae53ad37a650b with allocation id AllocationID{b91d7ce5113d97f8b339a4877100d55f}.
+2020-06-17 15:41:25,099 - Allocated slot for AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}.
+2020-06-17 15:41:25,099 - Offer reserved slots to the leader of job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,099 - Requesting new slot [SlotRequestId{d587af682ea25dddf3a75f372cbe58cb}] and profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} from resource manager.
+2020-06-17 15:41:25,099 - Receive slot request AllocationID{aaf83b91862cd4956ba8156e0655e6b5} for job 71e6a57b60b71fb3bebae53ad37a650b from resource manager with leader id 9593ae8b8cb4b48cdf5d38e373d147ec.
+2020-06-17 15:41:25,099 - Allocated slot for AllocationID{aaf83b91862cd4956ba8156e0655e6b5}.
+2020-06-17 15:41:25,100 - Offer reserved slots to the leader of job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,100 - Requesting new slot [SlotRequestId{c4d4c4a3ebcacbc06ce7be9f302fe34d}] and profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} from resource manager.
+2020-06-17 15:41:25,100 - Request slot with profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} for job 71e6a57b60b71fb3bebae53ad37a650b with allocation id AllocationID{e1e895904af4c99d4077ecee22ca0a2e}.
+2020-06-17 15:41:25,100 - Receive slot request AllocationID{fc9ccc4d0ae46038c4a118bbae8b8308} for job 71e6a57b60b71fb3bebae53ad37a650b from resource manager with leader id 9593ae8b8cb4b48cdf5d38e373d147ec.
+2020-06-17 15:41:25,100 - Request slot with profile ResourceProfile{cpuCores=-1.0, heapMemoryInMB=-1, directMemoryInMB=0, nativeMemoryInMB=0, networkMemoryInMB=0} for job 71e6a57b60b71fb3bebae53ad37a650b with allocation id AllocationID{a314f045d6eda4fc30cf9a1266af1eac}.
+2020-06-17 15:41:25,100 - Allocated slot for AllocationID{fc9ccc4d0ae46038c4a118bbae8b8308}.
+2020-06-17 15:41:25,100 - Offer reserved slots to the leader of job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,101 - Received repeated offer for slot [AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}]. Ignoring.
+2020-06-17 15:41:25,101 - Receive slot request AllocationID{b91d7ce5113d97f8b339a4877100d55f} for job 71e6a57b60b71fb3bebae53ad37a650b from resource manager with leader id 9593ae8b8cb4b48cdf5d38e373d147ec.
+2020-06-17 15:41:25,101 - Allocated slot for AllocationID{b91d7ce5113d97f8b339a4877100d55f}.
+2020-06-17 15:41:25,101 - Offer reserved slots to the leader of job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,101 - Received repeated offer for slot [AllocationID{9f08c738f370727054b0fae35a52129d}]. Ignoring.
+2020-06-17 15:41:25,101 - Received repeated offer for slot [AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}]. Ignoring.
+2020-06-17 15:41:25,101 - Receive slot request AllocationID{e1e895904af4c99d4077ecee22ca0a2e} for job 71e6a57b60b71fb3bebae53ad37a650b from resource manager with leader id 9593ae8b8cb4b48cdf5d38e373d147ec.
+2020-06-17 15:41:25,101 - Allocated slot for AllocationID{e1e895904af4c99d4077ecee22ca0a2e}.
+2020-06-17 15:41:25,101 - Received repeated offer for slot [AllocationID{335928a960296c706d65176cefefaf5f}]. Ignoring.
+2020-06-17 15:41:25,101 - Offer reserved slots to the leader of job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,101 - Received repeated offer for slot [AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}]. Ignoring.
+2020-06-17 15:41:25,102 - Received repeated offer for slot [AllocationID{9f08c738f370727054b0fae35a52129d}]. Ignoring.
+2020-06-17 15:41:25,102 - Received repeated offer for slot [AllocationID{335928a960296c706d65176cefefaf5f}]. Ignoring.
+2020-06-17 15:41:25,102 - Received repeated offer for slot [AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}]. Ignoring.
+2020-06-17 15:41:25,102 - Activate slot AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}.
+2020-06-17 15:41:25,102 - Received repeated offer for slot [AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}]. Ignoring.
+2020-06-17 15:41:25,102 - Received repeated offer for slot [AllocationID{9f08c738f370727054b0fae35a52129d}]. Ignoring.
+2020-06-17 15:41:25,102 - Receive slot request AllocationID{a314f045d6eda4fc30cf9a1266af1eac} for job 71e6a57b60b71fb3bebae53ad37a650b from resource manager with leader id 9593ae8b8cb4b48cdf5d38e373d147ec.
+2020-06-17 15:41:25,103 - Allocated slot for AllocationID{a314f045d6eda4fc30cf9a1266af1eac}.
+2020-06-17 15:41:25,103 - Offer reserved slots to the leader of job 71e6a57b60b71fb3bebae53ad37a650b.
+2020-06-17 15:41:25,103 - Received repeated offer for slot [AllocationID{335928a960296c706d65176cefefaf5f}]. Ignoring.
+2020-06-17 15:41:25,103 - Received repeated offer for slot [AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}]. Ignoring.
+2020-06-17 15:41:25,103 - Received repeated offer for slot [AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}]. Ignoring.
+2020-06-17 15:41:25,103 - Activate slot AllocationID{9f08c738f370727054b0fae35a52129d}.
+2020-06-17 15:41:25,103 - Received repeated offer for slot [AllocationID{9f08c738f370727054b0fae35a52129d}]. Ignoring.
+2020-06-17 15:41:25,103 - Activate slot AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}.
+2020-06-17 15:41:25,104 - Received repeated offer for slot [AllocationID{aaf83b91862cd4956ba8156e0655e6b5}]. Ignoring.
+2020-06-17 15:41:25,104 - Activate slot AllocationID{335928a960296c706d65176cefefaf5f}.
+2020-06-17 15:41:25,104 - Activate slot AllocationID{9f08c738f370727054b0fae35a52129d}.
+2020-06-17 15:41:25,104 - Activate slot AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}.
+2020-06-17 15:41:25,104 - Activate slot AllocationID{335928a960296c706d65176cefefaf5f}.
+2020-06-17 15:41:25,105 - Activate slot AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}.
+2020-06-17 15:41:25,105 - Activate slot AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}.
+2020-06-17 15:41:25,105 - Activate slot AllocationID{9f08c738f370727054b0fae35a52129d}.
+2020-06-17 15:41:25,105 - Activate slot AllocationID{335928a960296c706d65176cefefaf5f}.
+2020-06-17 15:41:25,105 - Activate slot AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}.
+2020-06-17 15:41:25,105 - Activate slot AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}.
+2020-06-17 15:41:25,105 - Activate slot AllocationID{9f08c738f370727054b0fae35a52129d}.
+2020-06-17 15:41:25,105 - Activate slot AllocationID{aaf83b91862cd4956ba8156e0655e6b5}.
+2020-06-17 15:41:25,106 - Activate slot AllocationID{335928a960296c706d65176cefefaf5f}.
+2020-06-17 15:41:25,106 - Activate slot AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}.
+2020-06-17 15:41:25,106 - Activate slot AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}.
+2020-06-17 15:41:25,106 - Activate slot AllocationID{fc9ccc4d0ae46038c4a118bbae8b8308}.
+2020-06-17 15:41:25,106 - Activate slot AllocationID{9f08c738f370727054b0fae35a52129d}.
+2020-06-17 15:41:25,106 - Activate slot AllocationID{aaf83b91862cd4956ba8156e0655e6b5}.
+2020-06-17 15:41:25,104 - Received repeated offer for slot [AllocationID{335928a960296c706d65176cefefaf5f}]. Ignoring.
+2020-06-17 15:41:25,107 - Received repeated offer for slot [AllocationID{fc9ccc4d0ae46038c4a118bbae8b8308}]. Ignoring.
+2020-06-17 15:41:25,107 - Received repeated offer for slot [AllocationID{aaf83b91862cd4956ba8156e0655e6b5}]. Ignoring.
+2020-06-17 15:41:25,107 - Received repeated offer for slot [AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}]. Ignoring.
+2020-06-17 15:41:25,107 - Received repeated offer for slot [AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}]. Ignoring.
+2020-06-17 15:41:25,107 - Received repeated offer for slot [AllocationID{9f08c738f370727054b0fae35a52129d}]. Ignoring.
+2020-06-17 15:41:25,107 - Received repeated offer for slot [AllocationID{335928a960296c706d65176cefefaf5f}]. Ignoring.
+2020-06-17 15:41:25,108 - Received repeated offer for slot [AllocationID{fc9ccc4d0ae46038c4a118bbae8b8308}]. Ignoring.
+2020-06-17 15:41:25,108 - Received repeated offer for slot [AllocationID{aaf83b91862cd4956ba8156e0655e6b5}]. Ignoring.
+2020-06-17 15:41:25,108 - Activate slot AllocationID{335928a960296c706d65176cefefaf5f}.
+2020-06-17 15:41:25,108 - Received repeated offer for slot [AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}]. Ignoring.
+2020-06-17 15:41:25,108 - Activate slot AllocationID{fc9ccc4d0ae46038c4a118bbae8b8308}.
+2020-06-17 15:41:25,108 - Received repeated offer for slot [AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}]. Ignoring.
+2020-06-17 15:41:25,108 - Activate slot AllocationID{aaf83b91862cd4956ba8156e0655e6b5}.
+2020-06-17 15:41:25,108 - Received repeated offer for slot [AllocationID{9f08c738f370727054b0fae35a52129d}]. Ignoring.
+2020-06-17 15:41:25,108 - Activate slot AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}.
+2020-06-17 15:41:25,108 - Received repeated offer for slot [AllocationID{b91d7ce5113d97f8b339a4877100d55f}]. Ignoring.
+2020-06-17 15:41:25,108 - Activate slot AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}.
+2020-06-17 15:41:25,108 - Activate slot AllocationID{9f08c738f370727054b0fae35a52129d}.
+2020-06-17 15:41:25,109 - Activate slot AllocationID{b91d7ce5113d97f8b339a4877100d55f}.
+2020-06-17 15:41:25,109 - Received repeated offer for slot [AllocationID{335928a960296c706d65176cefefaf5f}]. Ignoring.
+2020-06-17 15:41:25,109 - Activate slot AllocationID{335928a960296c706d65176cefefaf5f}.
+2020-06-17 15:41:25,109 - Received repeated offer for slot [AllocationID{fc9ccc4d0ae46038c4a118bbae8b8308}]. Ignoring.
+2020-06-17 15:41:25,109 - Activate slot AllocationID{fc9ccc4d0ae46038c4a118bbae8b8308}.
+2020-06-17 15:41:25,109 - Received repeated offer for slot [AllocationID{aaf83b91862cd4956ba8156e0655e6b5}]. Ignoring.
+2020-06-17 15:41:25,109 - Activate slot AllocationID{aaf83b91862cd4956ba8156e0655e6b5}.
+2020-06-17 15:41:25,109 - Received repeated offer for slot [AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}]. Ignoring.
+2020-06-17 15:41:25,109 - Activate slot AllocationID{2d33c14c3f0b5c9a9a4e4d8f1e33a6a5}.
+2020-06-17 15:41:25,110 - Activate slot AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}.
+2020-06-17 15:41:25,109 - Received repeated offer for slot [AllocationID{9f08c738f370727054b0fae35a52129d}]. Ignoring.
+2020-06-17 15:41:25,110 - Activate slot AllocationID{9f08c738f370727054b0fae35a52129d}.
+2020-06-17 15:41:25,110 - Received repeated offer for slot [AllocationID{b91d7ce5113d97f8b339a4877100d55f}]. Ignoring.
+2020-06-17 15:41:25,110 - Activate slot AllocationID{b91d7ce5113d97f8b339a4877100d55f}.
+2020-06-17 15:41:25,110 - Received repeated offer for slot [AllocationID{e1e895904af4c99d4077ecee22ca0a2e}]. Ignoring.
+2020-06-17 15:41:25,110 - Activate slot AllocationID{e1e895904af4c99d4077ecee22ca0a2e}.
+2020-06-17 15:41:25,110 - Source: Custom Source (1/1) (5faf53b533bc9ab5bd725a2d048b5585) switched from SCHEDULED to DEPLOYING.
+2020-06-17 15:41:25,111 - Deploying Source: Custom Source (1/1) (attempt #0) to 127.0.0.1
+2020-06-17 15:41:25,111 - Activate slot AllocationID{335928a960296c706d65176cefefaf5f}.
+2020-06-17 15:41:25,111 - Activate slot AllocationID{fc9ccc4d0ae46038c4a118bbae8b8308}.
+2020-06-17 15:41:25,111 - Activate slot AllocationID{aaf83b91862cd4956ba8156e0655e6b5}.
+2020-06-17 15:41:25,111 - Activate slot AllocationID{9371c5b60826cfbcdc4c2b0b4ad4ebb4}.
+2020-06-17 15:41:25,111 - Activate slot AllocationID{9f08c738f370727054b0fae35a52129d}.
+2020-06-17 15:41:25,111 - Activate slot AllocationID{b91d7ce5113d97f8b339a4877100d55f}.
+2020-06-17 15:41:25,111 - Activate slot AllocationID{e1e895904af4c99d4077ecee22ca0a2e}.
+2020-06-17 15:41:25,111 - Activate slot AllocationID{a314f045d6eda4fc30cf9a1266af1eac}.
+2020-06-17 15:41:25,117 - Sink: Print to Std. Out (10/10) (171117c5781fb10c4cbc05f10bdafd54) switched from SCHEDULED to DEPLOYING.
+2020-06-17 15:41:25,118 - Deploying Sink: Print to Std. Out (10/10) (attempt #0) to 127.0.0.1
+2020-06-17 15:41:25,120 - Sink: Print to Std. Out (9/10) (4cc983c7872957e9f832ed8db3908a01) switched from SCHEDULED to DEPLOYING.
+2020-06-17 15:41:25,120 - Deploying Sink: Print to Std. Out (9/10) (attempt #0) to 127.0.0.1
+2020-06-17 15:41:25,121 - Sink: Print to Std. Out (8/10) (f20914f6201873b3e2a95666e91e043c) switched from SCHEDULED to DEPLOYING.
+2020-06-17 15:41:25,121 - Deploying Sink: Print to Std. Out (8/10) (attempt #0) to 127.0.0.1
+2020-06-17 15:41:25,122 - Sink: Print to Std. Out (7/10) (c48c6a593d20ca7838895cd142d0a9d4) switched from SCHEDULED to DEPLOYING.
+2020-06-17 15:41:25,122 - Deploying Sink: Print to Std. Out (7/10) (attempt #0) to 127.0.0.1
+2020-06-17 15:41:25,122 - Sink: Print to Std. Out (6/10) (0c4b781637bbc0caf17e2038ae6d0697) switched from SCHEDULED to DEPLOYING.
+2020-06-17 15:41:25,122 - Deploying Sink: Print to Std. Out (6/10) (attempt #0) to 127.0.0.1
+2020-06-17 15:41:25,123 - Sink: Print to Std. Out (5/10) (5f5bca2c0543abd2355c7a3c92981334) switched from SCHEDULED to DEPLOYING.
+2020-06-17 15:41:25,123 - Deploying Sink: Print to Std. Out (5/10) (attempt #0) to 127.0.0.1
+2020-06-17 15:41:25,123 - Sink: Print to Std. Out (4/10) (0056536d38935a97dc7abc09a1237d6d) switched from SCHEDULED to DEPLOYING.
+2020-06-17 15:41:25,123 - Deploying Sink: Print to Std. Out (4/10) (attempt #0) to 127.0.0.1
+2020-06-17 15:41:25,124 - Sink: Print to Std. Out (3/10) (347c84bb7600e28a1e4f8df759690581) switched from SCHEDULED to DEPLOYING.
+2020-06-17 15:41:25,124 - Deploying Sink: Print to Std. Out (3/10) (attempt #0) to 127.0.0.1
+2020-06-17 15:41:25,124 - Sink: Print to Std. Out (2/10) (a4d4a88724f1fb5500264d61863a1cd7) switched from SCHEDULED to DEPLOYING.
+2020-06-17 15:41:25,124 - Deploying Sink: Print to Std. Out (2/10) (attempt #0) to 127.0.0.1
+2020-06-17 15:41:25,124 - Sink: Print to Std. Out (1/10) (882dbe86643b75e54dc984ca482e31ef) switched from SCHEDULED to DEPLOYING.
+2020-06-17 15:41:25,125 - Deploying Sink: Print to Std. Out (1/10) (attempt #0) to 127.0.0.1
+2020-06-17 15:41:25,140 - Received task Source: Custom Source (1/1).
+2020-06-17 15:41:25,141 - Source: Custom Source (1/1) (5faf53b533bc9ab5bd725a2d048b5585) switched from CREATED to DEPLOYING.
+2020-06-17 15:41:25,141 - Creating FileSystem stream leak safety net for task Source: Custom Source (1/1) (5faf53b533bc9ab5bd725a2d048b5585) [DEPLOYING]
+2020-06-17 15:41:25,145 - Loading JAR files for task Source: Custom Source (1/1) (5faf53b533bc9ab5bd725a2d048b5585) [DEPLOYING].
+2020-06-17 15:41:25,147 - Registering task at network: Source: Custom Source (1/1) (5faf53b533bc9ab5bd725a2d048b5585) [DEPLOYING].
+2020-06-17 15:41:25,148 - Received task Sink: Print to Std. Out (10/10).
+2020-06-17 15:41:25,159 - Sink: Print to Std. Out (10/10) (171117c5781fb10c4cbc05f10bdafd54) switched from CREATED to DEPLOYING.
+2020-06-17 15:41:25,161 - Creating FileSystem stream leak safety net for task Sink: Print to Std. Out (10/10) (171117c5781fb10c4cbc05f10bdafd54) [DEPLOYING]
+2020-06-17 15:41:25,164 - Loading JAR files for task Sink: Print to Std. Out (10/10) (171117c5781fb10c4cbc05f10bdafd54) [DEPLOYING].
+2020-06-17 15:41:25,171 - Received task Sink: Print to Std. Out (9/10).
+2020-06-17 15:41:25,172 - Registering task at network: Sink: Print to Std. Out (10/10) (171117c5781fb10c4cbc05f10bdafd54) [DEPLOYING].
+2020-06-17 15:41:25,173 - Sink: Print to Std. Out (9/10) (4cc983c7872957e9f832ed8db3908a01) switched from CREATED to DEPLOYING.
+2020-06-17 15:41:25,173 - Creating FileSystem stream leak safety net for task Sink: Print to Std. Out (9/10) (4cc983c7872957e9f832ed8db3908a01) [DEPLOYING]
+2020-06-17 15:41:25,173 - Loading JAR files for task Sink: Print to Std. Out (9/10) (4cc983c7872957e9f832ed8db3908a01) [DEPLOYING].
+2020-06-17 15:41:25,174 - Received task Sink: Print to Std. Out (8/10).
+2020-06-17 15:41:25,175 - Registering task at network: Sink: Print to Std. Out (9/10) (4cc983c7872957e9f832ed8db3908a01) [DEPLOYING].
+2020-06-17 15:41:25,176 - Sink: Print to Std. Out (8/10) (f20914f6201873b3e2a95666e91e043c) switched from CREATED to DEPLOYING.
+2020-06-17 15:41:25,176 - Creating FileSystem stream leak safety net for task Sink: Print to Std. Out (8/10) (f20914f6201873b3e2a95666e91e043c) [DEPLOYING]
+2020-06-17 15:41:25,176 - Loading JAR files for task Sink: Print to Std. Out (8/10) (f20914f6201873b3e2a95666e91e043c) [DEPLOYING].
+2020-06-17 15:41:25,178 - Received task Sink: Print to Std. Out (7/10).
+2020-06-17 15:41:25,179 - Registering task at network: Sink: Print to Std. Out (8/10) (f20914f6201873b3e2a95666e91e043c) [DEPLOYING].
+2020-06-17 15:41:25,182 - Received task Sink: Print to Std. Out (6/10).
+2020-06-17 15:41:25,182 - Sink: Print to Std. Out (7/10) (c48c6a593d20ca7838895cd142d0a9d4) switched from CREATED to DEPLOYING.
+2020-06-17 15:41:25,183 - Creating FileSystem stream leak safety net for task Sink: Print to Std. Out (7/10) (c48c6a593d20ca7838895cd142d0a9d4) [DEPLOYING]
+2020-06-17 15:41:25,183 - Loading JAR files for task Sink: Print to Std. Out (7/10) (c48c6a593d20ca7838895cd142d0a9d4) [DEPLOYING].
+2020-06-17 15:41:25,184 - Sink: Print to Std. Out (6/10) (0c4b781637bbc0caf17e2038ae6d0697) switched from CREATED to DEPLOYING.
+2020-06-17 15:41:25,185 - Registering task at network: Sink: Print to Std. Out (7/10) (c48c6a593d20ca7838895cd142d0a9d4) [DEPLOYING].
+2020-06-17 15:41:25,186 - Creating FileSystem stream leak safety net for task Sink: Print to Std. Out (6/10) (0c4b781637bbc0caf17e2038ae6d0697) [DEPLOYING]
+2020-06-17 15:41:25,187 - Loading JAR files for task Sink: Print to Std. Out (6/10) (0c4b781637bbc0caf17e2038ae6d0697) [DEPLOYING].
+2020-06-17 15:41:25,189 - Registering task at network: Sink: Print to Std. Out (6/10) (0c4b781637bbc0caf17e2038ae6d0697) [DEPLOYING].
+2020-06-17 15:41:25,193 - Received task Sink: Print to Std. Out (5/10).
+2020-06-17 15:41:25,194 - Sink: Print to Std. Out (5/10) (5f5bca2c0543abd2355c7a3c92981334) switched from CREATED to DEPLOYING.
+2020-06-17 15:41:25,194 - Creating FileSystem stream leak safety net for task Sink: Print to Std. Out (5/10) (5f5bca2c0543abd2355c7a3c92981334) [DEPLOYING]
+2020-06-17 15:41:25,194 - Loading JAR files for task Sink: Print to Std. Out (5/10) (5f5bca2c0543abd2355c7a3c92981334) [DEPLOYING].
+2020-06-17 15:41:25,196 - Received task Sink: Print to Std. Out (4/10).
+2020-06-17 15:41:25,196 - Registering task at network: Sink: Print to Std. Out (5/10) (5f5bca2c0543abd2355c7a3c92981334) [DEPLOYING].
+2020-06-17 15:41:25,197 - Sink: Print to Std. Out (4/10) (0056536d38935a97dc7abc09a1237d6d) switched from CREATED to DEPLOYING.
+2020-06-17 15:41:25,197 - Creating FileSystem stream leak safety net for task Sink: Print to Std. Out (4/10) (0056536d38935a97dc7abc09a1237d6d) [DEPLOYING]
+2020-06-17 15:41:25,197 - Loading JAR files for task Sink: Print to Std. Out (4/10) (0056536d38935a97dc7abc09a1237d6d) [DEPLOYING].
+2020-06-17 15:41:25,198 - Registering task at network: Sink: Print to Std. Out (4/10) (0056536d38935a97dc7abc09a1237d6d) [DEPLOYING].
+2020-06-17 15:41:25,199 - Received task Sink: Print to Std. Out (3/10).
+2020-06-17 15:41:25,202 - Sink: Print to Std. Out (3/10) (347c84bb7600e28a1e4f8df759690581) switched from CREATED to DEPLOYING.
+2020-06-17 15:41:25,203 - Creating FileSystem stream leak safety net for task Sink: Print to Std. Out (3/10) (347c84bb7600e28a1e4f8df759690581) [DEPLOYING]
+2020-06-17 15:41:25,203 - Loading JAR files for task Sink: Print to Std. Out (3/10) (347c84bb7600e28a1e4f8df759690581) [DEPLOYING].
+2020-06-17 15:41:25,204 - Received task Sink: Print to Std. Out (2/10).
+2020-06-17 15:41:25,205 - Registering task at network: Sink: Print to Std. Out (3/10) (347c84bb7600e28a1e4f8df759690581) [DEPLOYING].
+2020-06-17 15:41:25,205 - Sink: Print to Std. Out (2/10) (a4d4a88724f1fb5500264d61863a1cd7) switched from CREATED to DEPLOYING.
+2020-06-17 15:41:25,206 - Creating FileSystem stream leak safety net for task Sink: Print to Std. Out (2/10) (a4d4a88724f1fb5500264d61863a1cd7) [DEPLOYING]
+2020-06-17 15:41:25,206 - Loading JAR files for task Sink: Print to Std. Out (2/10) (a4d4a88724f1fb5500264d61863a1cd7) [DEPLOYING].
+2020-06-17 15:41:25,207 - Received task Sink: Print to Std. Out (1/10).
+2020-06-17 15:41:25,207 - Sink: Print to Std. Out (1/10) (882dbe86643b75e54dc984ca482e31ef) switched from CREATED to DEPLOYING.
+2020-06-17 15:41:25,207 - Creating FileSystem stream leak safety net for task Sink: Print to Std. Out (1/10) (882dbe86643b75e54dc984ca482e31ef) [DEPLOYING]
+2020-06-17 15:41:25,207 - Loading JAR files for task Sink: Print to Std. Out (1/10) (882dbe86643b75e54dc984ca482e31ef) [DEPLOYING].
+2020-06-17 15:41:25,208 - Registering task at network: Sink: Print to Std. Out (2/10) (a4d4a88724f1fb5500264d61863a1cd7) [DEPLOYING].
+2020-06-17 15:41:25,209 - Registering task at network: Sink: Print to Std. Out (1/10) (882dbe86643b75e54dc984ca482e31ef) [DEPLOYING].
+2020-06-17 15:41:25,213 - Sink: Print to Std. Out (10/10) (171117c5781fb10c4cbc05f10bdafd54) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,213 - Sink: Print to Std. Out (2/10) (a4d4a88724f1fb5500264d61863a1cd7) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,213 - Sink: Print to Std. Out (9/10) (4cc983c7872957e9f832ed8db3908a01) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,213 - Sink: Print to Std. Out (6/10) (0c4b781637bbc0caf17e2038ae6d0697) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,213 - Sink: Print to Std. Out (5/10) (5f5bca2c0543abd2355c7a3c92981334) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,213 - Sink: Print to Std. Out (1/10) (882dbe86643b75e54dc984ca482e31ef) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,213 - Sink: Print to Std. Out (4/10) (0056536d38935a97dc7abc09a1237d6d) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,214 - Sink: Print to Std. Out (2/10) (a4d4a88724f1fb5500264d61863a1cd7) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,214 - Sink: Print to Std. Out (7/10) (c48c6a593d20ca7838895cd142d0a9d4) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,214 - Sink: Print to Std. Out (3/10) (347c84bb7600e28a1e4f8df759690581) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,214 - Sink: Print to Std. Out (10/10) (171117c5781fb10c4cbc05f10bdafd54) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,213 - Sink: Print to Std. Out (8/10) (f20914f6201873b3e2a95666e91e043c) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,215 - Sink: Print to Std. Out (9/10) (4cc983c7872957e9f832ed8db3908a01) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,215 - Sink: Print to Std. Out (6/10) (0c4b781637bbc0caf17e2038ae6d0697) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,215 - Sink: Print to Std. Out (5/10) (5f5bca2c0543abd2355c7a3c92981334) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,215 - Sink: Print to Std. Out (1/10) (882dbe86643b75e54dc984ca482e31ef) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,215 - Sink: Print to Std. Out (4/10) (0056536d38935a97dc7abc09a1237d6d) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,215 - Sink: Print to Std. Out (7/10) (c48c6a593d20ca7838895cd142d0a9d4) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,215 - Sink: Print to Std. Out (3/10) (347c84bb7600e28a1e4f8df759690581) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,216 - Sink: Print to Std. Out (8/10) (f20914f6201873b3e2a95666e91e043c) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,216 - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-06-17 15:41:25,216 - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-06-17 15:41:25,216 - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-06-17 15:41:25,216 - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-06-17 15:41:25,216 - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-06-17 15:41:25,216 - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-06-17 15:41:25,216 - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-06-17 15:41:25,216 - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-06-17 15:41:25,216 - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-06-17 15:41:25,216 - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-06-17 15:41:25,220 - Source: Custom Source (1/1) (5faf53b533bc9ab5bd725a2d048b5585) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,220 - Source: Custom Source (1/1) (5faf53b533bc9ab5bd725a2d048b5585) switched from DEPLOYING to RUNNING.
+2020-06-17 15:41:25,220 - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)

@@ -1,0 +1,47 @@
+syntax = "proto3";//这个版本的protoc的protobuf编译器已经可以支持proto2语法和proto3的语法
+package com.dtc.analytic.online.protobuf;
+option java_outer_classname = "SubImageInfoObjProto";  //输出的类名
+
+message SubImageInfo{
+
+    //设备编码
+    string deviceId = 1;
+
+
+    //图像标识
+    string imageId = 2;
+
+    //图像来源
+    string imageSource = 3;
+
+    //题名
+    string title = 4;
+
+    //图片数据
+    bytes imageData = 5;
+
+    //图像文件格式
+    string fileFormat = 6;
+
+    //拍摄地点区划内详细地址
+    string shotPlaceFullAdress = 7;
+
+    //拍摄时间
+    int64 shotTime = 8;
+
+    //事件分类
+    int32 eventSort = 9;
+
+    //图像类型
+    int32 imageType = 10;
+
+    //信息分类
+    int32 infoKind = 11;
+
+    //存储路径
+    string storagePath = 12;
+
+    //内容描述
+    string contentDescription = 13;
+
+}

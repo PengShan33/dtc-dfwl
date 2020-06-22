@@ -1,0 +1,89 @@
+syntax = "proto3";//这个版本的protoc的protobuf编译器已经可以支持proto2语法和proto3的语法
+package com.dtc.analytic.online.protobuf;
+option java_outer_classname = "BaseStationObjProto";  //输出的类名
+
+
+// 机动车对象
+message BaseStation{
+
+    //开始时间
+    int64 begintime = 1;
+
+    //事件类型
+    string event = 2;
+
+    //用户号码
+    string usernum = 3;
+
+    //用户归宿局代码
+    string homearea = 4;
+
+    //对方号码
+    string relatenum = 5;
+
+    //对方号码归属地
+    string relatehomeac = 6;
+
+    //国际移动客户标识码
+    string imsi = 7;
+
+    //国际移动台设备识别码
+    string imei = 8;
+
+    //活动地区
+    string curarea = 9;
+
+    //交换机ID
+    string neid = 10;
+
+    //位置区代码
+    string lai = 11;
+
+    //小区编号
+    string ci = 12;
+
+    //基站经度
+    double longitude = 13;
+
+    //基站纬度
+    double latitude = 14;
+
+    //上个位置区
+    string oldlai = 15;
+
+    //上个小区
+    string oldci = 16;
+
+    //上个基站经度
+    double oldlongitude = 17;
+
+    //上个基站纬度
+    double oldlatitude = 18;
+
+    //记录标识
+    string recordId = 19;
+
+    //业务ID
+    string businessId = 20;
+
+    //接入时间
+    int64 accessTime = 21;
+
+    //设备编号
+    string deviceId = 22;
+
+    // 手机号段
+    string imsiUserNum = 23;
+
+    //手机归属地
+    string homeareaAddress = 24;
+
+    //场强
+    string RSSI = 25;
+}
+
+
+// 机动车对象列表
+message BaseStationList{
+    repeated BaseStation basestation = 1;
+}

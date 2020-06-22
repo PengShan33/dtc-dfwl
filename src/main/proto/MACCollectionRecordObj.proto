@@ -1,0 +1,99 @@
+syntax = "proto3";//这个版本的protoc的protobuf编译器已经可以支持proto2语法和proto3的语法
+package com.dtc.analytic.online.protobuf;
+option java_outer_classname = "MACCollectionRecordObjProto";  //输出的类名
+
+// MAC采集记录
+message MACCollectionRecord{
+
+    //记录编号
+    string recordId = 1;
+
+    //业务ID
+    string businessId = 2;
+
+    //设备编号
+    string deviceId = 3;
+
+    //设备名称
+    string deviceName = 4;
+
+    //场所编码
+    string placeCode = 5;
+
+    //场所名称
+    string placeName = 6;
+
+    //采集时间
+    int64 absTime = 7;
+
+    //采集MAC地址
+    string userMac = 8;
+
+    //终端MAC地址
+    string mac = 9;
+
+    //终端场强
+    string rssi = 10;
+
+    //终端品牌
+    string brand = 11;
+
+    //终端历史SSID列表
+    string ssidList = 12;
+
+    //终端距离探针设备的X坐标
+    double xCoordinate = 13;
+
+    //终端距离探针设备的Y坐标
+    double yCoordinate = 14;
+
+    //终端距离探针设备的距离，单位：米
+    double distance = 15;
+
+    //手机号码
+    string phoneNumber = 16;
+
+    //国际移动用户识别码
+    string imsi = 17;
+
+    //国际移动设备身份码
+    string imei = 18;
+
+    //账户信息json
+    string accountNumber = 19;
+
+    //第三方业务数据 json
+    string extraInfo = 20;
+
+    //终端是否已连接到无线AP
+    int32 apConnected = 21;
+
+    //终端连接的无线的MAC地址
+    string apMac = 22;
+
+    //终端连接的无线的SSID(名称)
+    string apSsid = 23;
+
+    //终端连接的无线的工作频段
+    int32 apFrequency = 24;
+
+    //终端连接的无线的工作信道中心频率，单位MHz
+    int32 apChannel = 25;
+
+    //终端连接的无线的工作信道的辅道中心频率
+    int32 apAuxChannel = 26;
+
+    //终端连接的无线的加密类型
+    string apEncryptType = 27;
+
+    //推送时间
+    int64 pushTime = 28;
+
+    //接入时间
+    int64 accessTime = 29;
+}
+
+// MAC采集记录列表
+message MACCollectionRecordList{
+    repeated MACCollectionRecord maclist = 1;
+}
