@@ -57,7 +57,7 @@ public class Main {
         joinResult.addSink(new OnLineResultSinkToOpentsdb(opentsdb_url));
 
         // 在线时长/离线时长/在线率指标计算
-        DataStream<Tuple4<String, Double, Double, Double>> indexResult = IndexUtils.indexCalculate(deviceInfoMysql, opentsdb_url);
+        DataStream<Tuple4<String, Double, Double, Double>> indexResult = IndexUtils.indexCalculate(deviceInfoMysql);
 
         // 指标计算结果写入opentsdb
         indexResult.addSink(new IndexResultSinkToOpentsdb(opentsdb_url));
