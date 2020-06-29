@@ -5,7 +5,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.dtc.analytic.online.common.constant.PropertiesConstants;
 import org.apache.flink.api.common.functions.RichFlatMapFunction;
-import org.apache.flink.api.java.tuple.Tuple4;
+import org.apache.flink.api.java.tuple.Tuple5;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.util.Collector;
 import org.opentsdb.client.ExpectResponse;
@@ -18,7 +18,7 @@ import org.opentsdb.client.util.Aggregator;
 import java.io.IOException;
 import java.util.*;
 
-public class IndexCalculateFlatMapFunction extends RichFlatMapFunction<String, Tuple4<String, Double, Double, Double>> {
+public class IndexCalculateFlatMapFunction extends RichFlatMapFunction<String, Tuple5<String, Double, Double, Double, Double>> {
     private HttpClientImpl httpClient;
 
     @Override
@@ -29,13 +29,13 @@ public class IndexCalculateFlatMapFunction extends RichFlatMapFunction<String, T
     }
 
     @Override
-    public void flatMap(String deviceId, Collector<Tuple4<String, Double, Double, Double>> collector) throws Exception {
-        Tuple4<String, Double, Double, Double> result = getResult(deviceId);
+    public void flatMap(String deviceId, Collector<Tuple5<String, Double, Double, Double, Double>> collector) throws Exception {
+        Tuple5<String, Double, Double, Double,  Double> result = getResult(deviceId);
         collector.collect(result);
     }
 
-    private Tuple4<String, Double, Double, Double> getResult(String deviceId) {
-        Tuple4<String, Double, Double, Double> result = new Tuple4<>();
+    private Tuple5<String, Double, Double, Double,  Double> getResult(String deviceId) {
+        Tuple5<String, Double, Double, Double,  Double> result = new Tuple5<>();
 
         QueryBuilder builder = QueryBuilder.getInstance();
         SubQueries subQueries = new SubQueries();
@@ -83,11 +83,23 @@ public class IndexCalculateFlatMapFunction extends RichFlatMapFunction<String, T
                     b++;
                 }
             }
+            // 连续离线计数
+            double c = 0;
+            for (int i = 0; i < seqMap.keySet().size() - 1; i++) {
+                Integer integer = seqMap.get(i);
+                if (integer == 0) {
+                    c++;
+                } else {
+                    break;
+                }
+            }
+
             double offLineTime = a * 5;
             double onLineTime = b * 5;
+            double offLineTime_c = c * 5;
             double onLineRate = b / (a + b);
 
-            result = Tuple4.of(deviceId, onLineTime, offLineTime, onLineRate);
+            result = Tuple5.of(deviceId, onLineTime, offLineTime, offLineTime_c, onLineRate);
         } catch (IOException e) {
             e.printStackTrace();
         }
