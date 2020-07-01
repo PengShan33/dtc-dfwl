@@ -26,25 +26,26 @@ public class getOffLineAlarmProcessFunction extends BroadcastProcessFunction<Tup
         String device_id = value.f0;
         String weiyi = device_id;
 
-        AlterStruct alterStruct = new AlterStruct();
+        AlterStruct alterStruct;
 
         // 离线告警
         String s = device_id + "." + "deviceOffline";
         if (broadcastState.contains(s)) {
             Tuple3<String, String, String> input = Tuple3.of(value.f0, s, value.f1);
             alterStruct = getOffLineAlarmResult(input, broadcastState);
-
             out.collect(alterStruct);
+            broadcastState.clear();
         }
     }
 
     @Override
     public void processBroadcastElement(Map<String, String> value, Context ctx, Collector<AlterStruct> collector) throws Exception {
+        BroadcastState<String, String> broadcastState = ctx.getBroadcastState(ALARM_RULES);
         if (value == null || value.size() == 0) {
+//            broadcastState.clear();
             return;
         }
         if (value != null) {
-            BroadcastState<String, String> broadcastState = ctx.getBroadcastState(ALARM_RULES);
             for (Map.Entry<String, String> entry : value.entrySet()) {
                 broadcastState.put(entry.getKey(), entry.getValue());
             }

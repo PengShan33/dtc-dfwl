@@ -28,7 +28,7 @@ public class AlarmUtils {
     public static List<DataStream<AlterStruct>> getAlarm(DataStream<Tuple5<String, Double, Double, Double, Double>> indexResult, BroadcastStream<Map<String, String>> broadcast, TimesConstants build) {
 //        indexResult.print("test-dataflow:");
         SingleOutputStreamOperator<AlterStruct> alert_rule = indexResult.connect(broadcast).process(new getAlarmProcessFunction());
-        alert_rule.print("test:");
+//        alert_rule.print("test:");
 
         // 收敛规则
         AfterMatchSkipStrategy skipStrategy = AfterMatchSkipStrategy.skipPastLastEvent();
@@ -328,7 +328,7 @@ public class AlarmUtils {
 
     public static List<DataStream<AlterStruct>> getOffLineAlarm(DataStream<Tuple2<String, String>> joinResult, BroadcastStream<Map<String, String>> broadcast, TimesConstants build) {
         SingleOutputStreamOperator<AlterStruct> offLine_alert_rule = joinResult.connect(broadcast).process(new getOffLineAlarmProcessFunction());
-        offLine_alert_rule.print("offLine_alert_test:");
+//        offLine_alert_rule.print("offLine_alert_test:");
         // 收敛规则
         AfterMatchSkipStrategy skipStrategy = AfterMatchSkipStrategy.skipPastLastEvent();
         Pattern<AlterStruct, ?> alarmGrade =

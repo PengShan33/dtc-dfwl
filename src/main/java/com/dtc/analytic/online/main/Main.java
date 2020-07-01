@@ -3,11 +3,9 @@ package com.dtc.analytic.online.main;
 import com.dtc.analytic.online.common.constant.PropertiesConstants;
 import com.dtc.analytic.online.common.modle.AlterStruct;
 import com.dtc.analytic.online.common.modle.TimesConstants;
-import com.dtc.analytic.online.common.utils.AlarmUtils;
-import com.dtc.analytic.online.common.utils.ExecutionEnvUtil;
-import com.dtc.analytic.online.common.utils.KafkaUtil;
-import com.dtc.analytic.online.common.utils.IndexUtils;
+import com.dtc.analytic.online.common.utils.*;
 import com.dtc.analytic.online.process.mapFunction.AlarmInfoMapFunction;
+import com.dtc.analytic.online.process.mapFunction.TestFlatMapFunction;
 import com.dtc.analytic.online.process.processFunction.AlarmInfoProcessFunction;
 import com.dtc.analytic.online.sink.AlarmDataSinkToMysql;
 import com.dtc.analytic.online.sink.IndexResultSinkToOpentsdb;
@@ -25,14 +23,12 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.apache.flink.streaming.api.functions.source.RichSourceFunction;
 import org.apache.flink.streaming.api.windowing.time.Time;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 public class Main {
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
@@ -95,12 +91,6 @@ public class Main {
 
         // 在线时长/累计离线时长/持续离线时长/在线率指标计算
         DataStream<Tuple5<String, Double, Double, Double, Double>> indexResult = IndexUtils.indexCalculate(deviceInfoMysql);
-        indexResult.filter(new FilterFunction<Tuple5<String, Double, Double, Double, Double>>() {
-            @Override
-            public boolean filter(Tuple5<String, Double, Double, Double, Double> value) throws Exception {
-                return value.f0.equals("s8");
-            }
-        }).print();
 
         // 指标计算结果写入opentsdb
         indexResult.addSink(new IndexResultSinkToOpentsdb(opentsdb_url));
@@ -108,6 +98,6 @@ public class Main {
         // 指标告警数据处理
         List<DataStream<AlterStruct>> alarmData = AlarmUtils.getAlarm(indexResult, broadcast, build);
         alarmData.forEach(e -> e.addSink(new AlarmDataSinkToMysql()));
-        env.execute("online-test");
+        env.execute("dfwl-online-test");
     }
 }

@@ -56,7 +56,7 @@ public class ReadAlarmInfo extends RichSourceFunction<Tuple9<String, String, Str
                     sourceContext.collect(Tuple9.of(asset_id, device_id, strategy_kind, triger_name, number, code, alarm_level, asset_code, name));
                 }
             }
-            Thread.sleep(1000 * 60);
+            Thread.sleep(1000 * 6);
         }
     }
 
